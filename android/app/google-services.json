@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "131243539531",
+    "project_id": "instadel-f7918",
+    "storage_bucket": "instadel-f7918.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131243539531:android:e0684cdf1250ec7bbc61ce",
+        "android_client_info": {
+          "package_name": "com.example.my_food_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131243539531-1qus64b6ao8fhspiven1iollnef10669.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.my_food_app",
+            "certificate_hash": "58528bf4be7847912ced91829f13f5f4ff07f9b5"
+          }
+        },
+        {
+          "client_id": "131243539531-lheu92l83clv8ln1hd35j9pnimeg2nhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8G3TW9tnlelpXwzoPszOJwXPVMfUq27I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131243539531-lheu92l83clv8ln1hd35j9pnimeg2nhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
