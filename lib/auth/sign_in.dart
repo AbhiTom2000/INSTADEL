@@ -67,7 +67,7 @@ class _SignInState extends State<SignIn> {
                 children: [
                   Text('Sign in to contunue'),
                   Text(
-                    'Instadel',
+                    'INSTADEL',
                     style:
                         TextStyle(fontSize: 50, color: Colors.white, shadows: [
                       BoxShadow(

@@ -76,7 +76,7 @@ class _AddDeliverAddressState extends State<AddDeliverAddress> {
               controller: checkoutProvider.alternateMobileNo,
             ),
             CostomTextField(
-              labText: "Scoiety",
+              labText: "Society",
               controller: checkoutProvider.scoiety,
             ),
             CostomTextField(
@@ -92,7 +92,7 @@ class _AddDeliverAddressState extends State<AddDeliverAddress> {
               controller: checkoutProvider.city,
             ),
             CostomTextField(
-              labText: "Aera",
+              labText: "Area",
               controller: checkoutProvider.aera,
             ),
             CostomTextField(
@@ -114,7 +114,7 @@ class _AddDeliverAddressState extends State<AddDeliverAddress> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    checkoutProvider.setLoaction == null? Text("Set Loaction"):
+                    checkoutProvider.setLoaction == null? Text("Set Location"):
                     Text("Done!"),
                   ],
                 ),

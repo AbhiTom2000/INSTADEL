@@ -97,19 +97,19 @@ class _SingleItemState extends State<SingleItem> {
                                         mainAxisSize: MainAxisSize.min,
                                         children: <Widget>[
                                           ListTile(
-                                            title: new Text('50 Gram'),
+                                            title: new Text('1 Unit'),
                                             onTap: () {
                                               Navigator.pop(context);
                                             },
                                           ),
                                           ListTile(
-                                            title: new Text('500 Gram'),
+                                            title: new Text('2 Units'),
                                             onTap: () {
                                               Navigator.pop(context);
                                             },
                                           ),
                                           ListTile(
-                                            title: new Text('1 Kg'),
+                                            title: new Text('3 Units'),
                                             onTap: () {
                                               Navigator.pop(context);
                                             },
@@ -130,7 +130,7 @@ class _SingleItemState extends State<SingleItem> {
                                   children: [
                                     Expanded(
                                       child: Text(
-                                       "50 Gram",
+                                        "50 Gram",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 14,
@@ -200,7 +200,6 @@ class _SingleItemState extends State<SingleItem> {
                                                   Fluttertoast.showToast(
                                                     msg:
                                                         "You reach minimum limit",
-                                                
                                                   );
                                                 } else {
                                                   setState(() {

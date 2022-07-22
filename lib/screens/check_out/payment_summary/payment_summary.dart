@@ -71,7 +71,7 @@ class _PaymentSummaryState extends State<PaymentSummary> {
             
             },
             child: Text(
-              "Pleace Order",
+              "Place Order",
               style: TextStyle(
                 color: textColor,
               ),
@@ -92,7 +92,7 @@ class _PaymentSummaryState extends State<PaymentSummary> {
               children: [
                 SingleDeliveryItem(
                   address:
-                      "aera, ${widget.deliverAddressList.aera}, street, ${widget.deliverAddressList.street}, society ${widget.deliverAddressList.scoirty}, pincode ${widget.deliverAddressList.pinCode}",
+                      "area, ${widget.deliverAddressList.aera}, street, ${widget.deliverAddressList.street}, society ${widget.deliverAddressList.scoirty}, pincode ${widget.deliverAddressList.pinCode}",
                   title:
                       "${widget.deliverAddressList.firstName} ${widget.deliverAddressList.lastName}",
                   number: widget.deliverAddressList.mobileNo,
@@ -146,7 +146,7 @@ class _PaymentSummaryState extends State<PaymentSummary> {
                 ListTile(
                   minVerticalPadding: 5,
                   leading: Text(
-                    "Compen Discount",
+                    "Discount",
                     style: TextStyle(color: Colors.grey[600]),
                   ),
                   trailing: Text(

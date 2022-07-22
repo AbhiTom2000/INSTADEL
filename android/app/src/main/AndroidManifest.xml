@@ -8,9 +8,10 @@ android:name="android.permission.ACCESS_COARSE_LOCATION" />
         android:label="food_app"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="AIzaSyCm2J-sFU8t1Zjb64ti2mJmGiH84q89va0"/>
+               android:value="AIzaSyDeLOQCoJAHw06inot7K7rQkFYRegbzP20"/>
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

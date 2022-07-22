@@ -31,7 +31,7 @@ class CheckoutProvider with ChangeNotifier {
     } else if (alternateMobileNo.text.isEmpty) {
       Fluttertoast.showToast(msg: "alternateMobileNo is empty");
     } else if (scoiety.text.isEmpty) {
-      Fluttertoast.showToast(msg: "scoiety is empty");
+      Fluttertoast.showToast(msg: "society is empty");
     } else if (street.text.isEmpty) {
       Fluttertoast.showToast(msg: "street is empty");
     } else if (landmark.text.isEmpty) {
@@ -39,11 +39,11 @@ class CheckoutProvider with ChangeNotifier {
     } else if (city.text.isEmpty) {
       Fluttertoast.showToast(msg: "city is empty");
     } else if (aera.text.isEmpty) {
-      Fluttertoast.showToast(msg: "aera is empty");
+      Fluttertoast.showToast(msg: "area is empty");
     } else if (pincode.text.isEmpty) {
       Fluttertoast.showToast(msg: "pincode is empty");
     } else if (setLoaction == null) {
-      Fluttertoast.showToast(msg: "setLoaction is empty");
+      Fluttertoast.showToast(msg: "setLocation is empty");
     } else {
       isloadding = true;
       notifyListeners();
@@ -55,11 +55,11 @@ class CheckoutProvider with ChangeNotifier {
         "lastname": lastName.text,
         "mobileNo": mobileNo.text,
         "alternateMobileNo": alternateMobileNo.text,
-        "scoiety": scoiety.text,
+        "society": scoiety.text,
         "street": street.text,
         "landmark": landmark.text,
         "city": city.text,
-        "aera": aera.text,
+        "area": aera.text,
         "pincode": pincode.text,
         "addressType": myType.toString(),
         "longitude": setLoaction.longitude,
@@ -89,13 +89,13 @@ class CheckoutProvider with ChangeNotifier {
         firstName: _db.get("firstname"),
         lastName: _db.get("lastname"),
         addressType: _db.get("addressType"),
-        aera: _db.get("aera"),
+        aera: _db.get("area"),
         alternateMobileNo: _db.get("alternateMobileNo"),
         city: _db.get("city"),
         landMark: _db.get("landmark"),
         mobileNo: _db.get("mobileNo"),
         pinCode: _db.get("pincode"),
-        scoirty: _db.get("scoiety"),
+        scoirty: _db.get("society"),
         street: _db.get("street"),
       );
       newList.add(deliveryAddressModel);

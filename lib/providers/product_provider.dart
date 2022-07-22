@@ -18,14 +18,14 @@ class ProductProvider with ChangeNotifier {
     search.add(productModel);
   }
 
-  /////////////// herbsProduct ///////////////////////////////
+  /////////////// BiscuitsAndCookies ///////////////////////////////
   List<ProductModel> herbsProductList = [];
 
   fatchHerbsProductData() async {
     List<ProductModel> newList = [];
 
     QuerySnapshot value =
-        await FirebaseFirestore.instance.collection("HerbsProduct").get();
+        await FirebaseFirestore.instance.collection("BiscuitsAndCookies").get();
 
     value.docs.forEach(
       (element) {
@@ -42,7 +42,7 @@ class ProductProvider with ChangeNotifier {
     return herbsProductList;
   }
 
-//////////////// Fresh Product ///////////////////////////////////////
+//////////////// Fresh Fruits ///////////////////////////////////////
 
   List<ProductModel> freshProductList = [];
 
@@ -50,7 +50,7 @@ class ProductProvider with ChangeNotifier {
     List<ProductModel> newList = [];
 
     QuerySnapshot value =
-        await FirebaseFirestore.instance.collection("FreshProduct").get();
+        await FirebaseFirestore.instance.collection("Fresh Fruits").get();
 
     value.docs.forEach(
       (element) {
@@ -66,7 +66,7 @@ class ProductProvider with ChangeNotifier {
     return freshProductList;
   }
 
-//////////////// Root Product ///////////////////////////////////////
+//////////////// Eatables ///////////////////////////////////////
 
   List<ProductModel> rootProductList = [];
 
@@ -74,7 +74,7 @@ class ProductProvider with ChangeNotifier {
     List<ProductModel> newList = [];
 
     QuerySnapshot value =
-        await FirebaseFirestore.instance.collection("RootProduct").get();
+        await FirebaseFirestore.instance.collection("Eatables").get();
 
     value.docs.forEach(
       (element) {

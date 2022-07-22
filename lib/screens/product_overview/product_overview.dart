@@ -113,7 +113,6 @@ class _ProductOverviewState extends State<ProductOverview> {
                     wishListName: widget.productName,
                     wishListPrice: widget.productPrice,
                     wishListQuantity: 2,
-                    
                   );
                 } else {
                   wishListProvider.deleteWishtList(widget.productId);
