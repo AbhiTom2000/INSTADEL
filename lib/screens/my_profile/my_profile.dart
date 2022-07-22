@@ -33,14 +33,15 @@ class _MyProfileState extends State<MyProfile> {
     var userData = widget.userProvider.currentUserData;
 
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         elevation: 0.0,
         title: Text(
           "My Profile",
           style: TextStyle(
+            color: Colors.white,
             fontSize: 18,
-            color: textColor,
           ),
         ),
       ),
@@ -53,7 +54,7 @@ class _MyProfileState extends State<MyProfile> {
             children: [
               Container(
                 height: 100,
-                color: primaryColor,
+                color: Colors.white10,
               ),
               Container(
                 height: 548,
@@ -97,12 +98,12 @@ class _MyProfileState extends State<MyProfile> {
                               ),
                               CircleAvatar(
                                 radius: 15,
-                                backgroundColor: primaryColor,
+                                backgroundColor: Colors.black,
                                 child: CircleAvatar(
                                   radius: 12,
                                   child: Icon(
                                     Icons.edit,
-                                    color: primaryColor,
+                                    color: Colors.black,
                                   ),
                                   backgroundColor: scaffoldBackgroundColor,
                                 ),
@@ -135,7 +136,7 @@ class _MyProfileState extends State<MyProfile> {
             padding: const EdgeInsets.only(top: 40, left: 30),
             child: CircleAvatar(
               radius: 50,
-              backgroundColor: primaryColor,
+              backgroundColor: Color.fromARGB(255, 88, 87, 87),
               child: CircleAvatar(
                   backgroundImage: NetworkImage(
                     userData.userImage ??

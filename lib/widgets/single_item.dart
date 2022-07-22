@@ -81,7 +81,7 @@ class _SingleItemState extends State<SingleItem> {
                                 fontSize: 16),
                           ),
                           Text(
-                            "${widget.productPrice}\$",
+                            "\u{20B9}${widget.productPrice}",
                             style: TextStyle(
                                 color: textColor, fontWeight: FontWeight.bold),
                           ),

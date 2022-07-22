@@ -49,10 +49,11 @@ class ReviewCart extends StatelessWidget {
     reviewCartProvider = Provider.of<ReviewCartProvider>(context);
     reviewCartProvider.getReviewCartData();
     return Scaffold(
+      backgroundColor: Colors.white,
       bottomNavigationBar: ListTile(
         title: Text("Total Aount"),
         subtitle: Text(
-          "\$ ${reviewCartProvider.getTotalPrice()}",
+          "\u{20B9} ${reviewCartProvider.getTotalPrice()}",
           style: TextStyle(
             color: Colors.green[900],
           ),
@@ -60,15 +61,15 @@ class ReviewCart extends StatelessWidget {
         trailing: Container(
           width: 160,
           child: MaterialButton(
-            child: Text("Submit"),
-            color: primaryColor,
+            child: Text("Submit", style: TextStyle(color: Colors.white)),
+            color: Colors.black,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(
                 30,
               ),
             ),
             onPressed: () {
-              if(reviewCartProvider.getReviewCartDataList.isEmpty){
+              if (reviewCartProvider.getReviewCartDataList.isEmpty) {
                 return Fluttertoast.showToast(msg: "No Cart Data Found");
               }
               Navigator.of(context).push(
@@ -81,9 +82,10 @@ class ReviewCart extends StatelessWidget {
         ),
       ),
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text(
           "Review Cart",
-          style: TextStyle(color: textColor, fontSize: 18),
+          style: TextStyle(color: Colors.white, fontSize: 18),
         ),
       ),
       body: reviewCartProvider.getReviewCartDataList.isEmpty

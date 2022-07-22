@@ -219,11 +219,11 @@ class _HomeScreenState extends State<HomeScreen> {
         userProvider: userProvider,
       ),
       appBar: AppBar(
-       // backgroundcolor=Colors.black,
-        iconTheme: IconThemeData(color: textColor),
+        backgroundColor: Colors.black,
+        //iconTheme: IconThemeData(color: textColor),
         title: Text(
-          'Home',
-          style: TextStyle(color: textColor, fontSize: 17),
+          'INSTADEL',
+          style: TextStyle(color: Colors.white, fontSize: 17),
         ),
         actions: [
           CircleAvatar(
@@ -267,7 +267,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ],
-        backgroundColor: Color(0x0f0f13),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
@@ -297,28 +296,28 @@ class _HomeScreenState extends State<HomeScreen> {
                               height: 50,
                               width: 100,
                               decoration: BoxDecoration(
-                                color: Color(0xffffffff),
+                                color: Color(0xffffffff).withOpacity(0),
                                 borderRadius: BorderRadius.only(
                                   bottomRight: Radius.circular(50),
                                   bottomLeft: Radius.circular(50),
                                 ),
                               ),
                               child: Center(
-                                child: Text(
-                                  'INSTADEL',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                    shadows: [
-                                      BoxShadow(
-                                          color:
-                                              Color.fromARGB(255, 230, 209, 24),
-                                          blurRadius: 10,
-                                          offset: Offset(3, 3))
-                                    ],
+                                  // child: Text(
+                                  //   'INSTADEL',
+                                  //   style: TextStyle(
+                                  //     fontSize: 20,
+                                  //     color: Colors.white,
+                                  //     shadows: [
+                                  //       BoxShadow(
+                                  //           color:
+                                  //               Color.fromARGB(255, 230, 209, 24),
+                                  //           blurRadius: 10,
+                                  //           offset: Offset(3, 3))
+                                  //     ],
+                                  //   ),
+                                  // ),
                                   ),
-                                ),
-                              ),
                             ),
                           ),
                           Text(

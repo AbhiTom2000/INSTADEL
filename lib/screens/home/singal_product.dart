@@ -43,7 +43,7 @@ class _SingalProductState extends State<SingalProduct> {
             height: 230,
             width: 165,
             decoration: BoxDecoration(
-              color: Color(0xffd9dad9),
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Column(
@@ -76,7 +76,7 @@ class _SingalProductState extends State<SingalProduct> {
                           ),
                         ),
                         Text(
-                          '${widget.productPrice}\$/${unitData == null?firstValue:unitData}',
+                          '\u{20B9}${widget.productPrice}/${unitData == null ? firstValue : unitData}',
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -128,7 +128,7 @@ class _SingalProductState extends State<SingalProduct> {
                                         );
                                       });
                                 },
-                                title: unitData == null?firstValue:unitData,
+                                title: unitData == null ? firstValue : unitData,
                               ),
                             ),
                             SizedBox(
@@ -139,7 +139,8 @@ class _SingalProductState extends State<SingalProduct> {
                               productImage: widget.productImage,
                               productName: widget.productName,
                               productPrice: widget.productPrice,
-                              productUnit: unitData == null?firstValue:unitData,
+                              productUnit:
+                                  unitData == null ? firstValue : unitData,
                             ),
                           ],
                         ),
