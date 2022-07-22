@@ -5,8 +5,8 @@ android:name="android.permission.ACCESS_FINE_LOCATION" />
    <uses-permission
 android:name="android.permission.ACCESS_COARSE_LOCATION" />
    <application
-        android:label="food_app"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Instadel"
+        android:icon="@mipmap/launcher_icon">
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyDeLOQCoJAHw06inot7K7rQkFYRegbzP20"/>
         <activity

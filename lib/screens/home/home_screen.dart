@@ -219,6 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
         userProvider: userProvider,
       ),
       appBar: AppBar(
+       // backgroundcolor=Colors.black,
         iconTheme: IconThemeData(color: textColor),
         title: Text(
           'Home',
